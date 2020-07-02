@@ -15,7 +15,7 @@ chmod -R a+w /github/workspace
 # Build the Jekyll site
 ####################################################
 
-ll
+ls -l
 which lftp
 jekyll build --trace --config _config.yml,deploy.yml
 #sudo chown -R $USER:$USER /home/runner/work/sleep-docs
