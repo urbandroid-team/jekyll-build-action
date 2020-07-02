@@ -15,9 +15,10 @@ chmod -R a+w /github/workspace
 # Build the Jekyll site
 ####################################################
 
+pwd
 ls -l
 which lftp
-jekyll build --trace --config _config.yml,deploy.yml
+jekyll build --trace --config /github/workspace/_config.yml,/github/workspace/deploy.yml
 #sudo chown -R $USER:$USER /home/runner/work/sleep-docs
 lftp -e 'mirror -R --parallel=20  _site/. /; bye' -u $FTP_USER,$FTP_PASS $FTP_SERVER
 
