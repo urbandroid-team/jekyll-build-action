@@ -1,4 +1,4 @@
-name: 'Build Jekyll'
+name: 'Build Jekyll - Urbandroid'
 description: 'Local pipeline build of Jekyll content; follow-on actions must publish it somewhere'
 runs:
   using: 'docker'
