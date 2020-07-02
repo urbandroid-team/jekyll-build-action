@@ -16,7 +16,7 @@ chmod -R a+w /github/workspace
 ####################################################
 
 sudo jekyll build --trace --config _config.yml,deploy.yml
-sudo chown -R $USER:$USER /home/github/actions-runner/_work/sleep-docs
+sudo chown -R $USER:$USER /home/runner/work/sleep-docs
 
 ####################################################
 # Build completed
